@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../images/background2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1366px) {
+    div.column a{
+        transition: none;
+        animation-name: none;
+        
+        right: 1px;
+        transform: translateY(20%);
+
+    }
+
+    div.column a:hover {
+        transform: none;
+
+    }
+
+    div.column2 a{
+        transition: none;
+        animation-name: none;
+        
+        right: 1px;
+        transform: translateY(20%);
+         
+        
+    }
+
+    div.column2 a:hover {
+        transform: scale(1.0);
+
+    }
+  }
+
+
+.column a{
+    float: left;
+    width: 50%;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+	animation-name: fadeInOpacity2;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2.5s;
+    transition: transform .2s;
+    margin: 0 auto;
+    font-size:medium;
+}
+
+.column a:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes fadeInOpacity2 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+  .column2 a{
+    float: left;
+    width: 50%;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+    transition: transform .2s;
+    margin: 0 auto;
+    font-size:medium;
+  }
+
+  .column2 a:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+  }
+
+  @keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
